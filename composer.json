@@ -1,0 +1,21 @@
+{
+    "name": "wc-develop/php-ofx-reader",
+    "description": "Template-based OFX reader",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "WcDeveloper\\PhpOfxReader\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wanderson Costa",
+            "email": "contact.wcdevelopment@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "nesbot/carbon": "^2.71"
+    }
+}
