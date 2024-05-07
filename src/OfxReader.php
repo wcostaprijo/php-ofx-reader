@@ -91,6 +91,7 @@ class OfxReader
     {
         $ofxContent = str_replace(["\r\n", "\n", "\r"], "", $ofxContent);
         $ofxContent = str_replace(["\t", ""], "", $ofxContent);
+        $ofxContent = mb_convert_encoding($ofxContent, 'UTF-8', mb_detect_encoding($ofxContent));
 
         $sgmlStart = stripos($ofxContent, '<'.$this->template->rootTag().'>');
         $ofxHeader =  trim(substr($ofxContent, 0, $sgmlStart));
