@@ -7,6 +7,8 @@ A maior diferença da biblioteca é a utilização de templates para leitura dos
 
 ## Instalação
 
+***Está biblioteca tem como dependência a extensão [mbstring](https://www.php.net/manual/en/book.mbstring.php) do php.*** 
+
 A instalação é simples bastar usar o [Composer](https://getcomposer.org/):
 
 ```bash
